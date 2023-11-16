@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="img/png" href="../images/videokamera.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <script src="../scripts/carousel.js" defer></script>
+    <script src="../scripts/pop_up_menu.js" defer></script>
+</head>
+<body style="margin: 0px;">
+    <header style="display: flex;  justify-content: center; background-color:rgb(247, 240, 228);">
+        <img style="align-items: center; display: flex;" src="../images/videokamera.png" width="100px"
+            height="100px">
+        <h1 style="text-align: center;  margin-top: 30px;">
+            Мир кино
+        </h1>
+        <input id="menu-toggle" type="checkbox">
+        <label for="menu-toggle">
+            <img src="../images/menu_button.png">
+        </label>
+            <nav class="burger-menu-container">
+                <ul style="display: flex; font-family: KPACUBO3; margin-right: 20px;" class="burger-menu">
+                    <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 10px;"><a href="../pages/horrors.html">Хорроры</a></li>
+                    <li style="font-family: KPACUBO3;margin-left: 10px; margin-bottom: 5px;"><a href="../pages/comedy.html">Комедии</a></li>
+                    <li style="font-family: KPACUBO3;margin-left: 5px; margin-right: 10px;"><a href="../pages/adventures.html">Приключения</a></li>
+                </ul>
+            </nav>
+    </header>
+    <button id="notification-button">Уведомления</button>
+        <div id="notification-popup" class="hidden">
+            <div id="notification-list">
+                <div class="notification">
+                    <h3>Заголовок уведомления</h3>
+                    <p>Описание уведомления</p>
+                </div>
+            </div>
+            <div id="no-notifications" class="hidden">В настоящий момент уведомлений нет</div>
+        </div>
+  
+        <main class="container">
+            <section class="scrolling-carousel">
+              <div class="card" style="background-image: url('https://asiasociety.org/sites/default/files/styles/1200w/public/2019-10/Parasite.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Parasite (2019)</h3>
+                    <p class="card-description">Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" style="background-image: url('https://s.hdnux.com/photos/67/65/32/14636718/4/rawImage.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Coco (2017)</h3>
+                    <p class="card-description">Miguel pursues his love for singing in spite of his family's ban on music. He stumbles into the Land of the Dead, where he learns about his great-great-grandfather who was a legendary singer.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" style="background-image: url('https://thefailedcritic.files.wordpress.com/2014/09/shrek-2.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Shrek 2 (2004)</h3>
+                    <p class="card-description">Shrek and Fiona travel to the Kingdom of Far Far Away to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BM2M1NTU0ODctZmEzNC00NzdjLTkwNTktODU1YzYwNGI4MTRmXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Forrest Gump (1994)</h3>
+                    <p class="card-description">Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card" style="background-image: url('https://unbelievable-facts.com/wp-content/uploads/2017/11/Kung-Fu-Hustle-Facts.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Kung Fu Hustle (2004)</h3>
+                    <p class="card-description">An aspiring gangster pretends to be part of a notorious gang and tries to terrorise a neighbourhood. However, unknown to him, three martial arts experts live there and are ready to take him down.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+
+    
+    <footer style="background-color: rgb(53, 67, 41);">
+        <div class="container-footer">
+            <div class="subcontainer-footer">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur corporis fugiat assumenda exercitationem dolores rem deserunt!</p>
+                <div style="margin-bottom: 10px; margin-top: 0px;" width="30%">
+                    <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Quick links</h2>
+                <a href="../pages/comedy.html">Comedies</a>
+                <a href="../pages/adventures.html">Adventures</a>
+                <a href="../pages/horrors.html">Horrors</a>
+                <a href="../pages/Reg1.html">Registration1</a>
+                <a href="../pages/Reg2.html">Registration2</a>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Contact us</h2>
+                <a href="../pages/form.html">Comment</a>
+                
+            </div> 
+        </div>
+    </footer>
+</body>
+
+</html>

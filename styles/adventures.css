@@ -1,0 +1,277 @@
+@import url(fonts.css);
+body {
+    margin: 0px;
+    height: 1200px;
+}
+.container > div {
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.gallery  > div{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: KPACUBO3;
+    color: white;
+}
+.gallery > div > p {
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    height: 99%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:3;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:2;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card3 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:4;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card4 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card5 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:4;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card6 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card7 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end:5;
+    background-color: rgb(69, 69, 69);
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1), transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card1:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card2:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card3:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card4:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card5:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card6:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card7:hover {
+    background-color: rgb(141, 47, 47);
+    transform: scale(1.04);
+}
+.card1 img {
+    width: 80%;
+    height: 70%;
+    max-height: 316px;
+}
+.card2 img {
+    width: 20%;
+    height: 70%;
+    max-height: 180px;
+}
+.card3 img {
+    width: 80%;
+    height: 65%;
+    max-height: 279px;
+}
+.card4 img {
+    margin-top: 2%;
+    width: 30%;
+    height: 70%;
+    max-height: 132px;
+}
+.card4 p {
+    margin-bottom: 2%;
+    margin-top  : 2%;
+}
+.card5 img {
+    width: 50%;
+    height: 60%;
+    max-height: 140.5px;
+}
+.card6 img {
+    width: 50%;
+    height: 60%;
+    max-height: 140.5px;
+}
+.card7 img {
+    height: 40%;
+    width: 30%;
+    max-height: 81.4px;
+}
+.card7 p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'head head head'
+    'sidebar nav ads'
+    'sidebar main ads'
+    'sidebar main ads'
+    'footer footer footer';
+    grid-template-columns: 15% 68% 15%;
+    grid-template-rows: 12% 12% 35% 40% 12%;
+    grid-auto-flow: dense;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;   
+}
+.header {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: head;
+    background-color: chartreuse;
+}
+.sidebar {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: sidebar;
+    background-color: red;
+}
+.nav {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: nav;
+    background-color: blue;
+}
+.main {
+    background-color: pink;
+    grid-area: main;
+    justify-self: stretch;
+    align-self: stretch;
+}
+.ads {
+    background-color: darkmagenta;
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: ads;
+}
+.footer {
+    justify-self: stretch;
+    align-self: stretch;
+    background-color: gold;
+    grid-area: footer;
+}
+@media (max-width: 800px) and (min-width:400px) {
+    .container {
+        display: grid;
+        grid-template-areas: 'head head'
+        'nav nav'
+        'sidebar main'
+        'sidebar main'
+        'ads footer';
+        grid-template-columns: 28% 68%;
+        grid-template-rows: 12% 12% 35% 40% 12%;
+        grid-auto-flow: dense;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;   
+    }
+}
+@media (max-width: 399px) {
+    .container {
+        display: grid;
+        /* grid-template-columns: [colstart] 19% [col1] 60% [col2] 19% [colend];
+        grid-template-rows: [rowstart] 150px [row1] 100px [row2] 1000px [row3] 100px [rownend]; */
+        grid-template-areas: 'head'
+        'nav'
+        'main'
+        'main'
+        'sidebar'
+        'ads' 
+        'footer';
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 12% 35% 40% 12% 12%;
+        grid-auto-flow: dense;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;   
+    }
+}

@@ -10,3 +10,11 @@
     font-family: KPACUBO3;
     src: url(../styles/fonts/Comfortaa-Bold.ttf);
 }
+@font-face {
+    font-family: Kinopoisk;
+    src: url(../styles/fonts/Graphik\ LC\ Web\ Bold\ Regular.woff2.ttf);
+}
+@font-face {
+    font-family: Kinopoisk-thin;
+    src: url(../styles/fonts/PTSans-Regular.ttf);
+}

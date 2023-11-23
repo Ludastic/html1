@@ -3,110 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина товаров</title>
+    <title>Уведомление</title>
+    <style>
+        .notification {
+            position: absolute;
+            margin-left: 80vw;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        button {
+            margin-top: 50px; /* Добавим отступ сверху для кнопки */
+        }
+    </style>
 </head>
 <body>
+    <button onclick="addNotification()">Добавить уведомление</button>
 
-<button onclick="changeItem()">Изменить товар</button>
-<button onclick="clearCart()">Очистить корзину</button>
-<button onclick="showCart()">Показать корзину</button>
-<button onclick="increaseQuantity()">Увеличить количество товара</button>
+    <script>
+        var notifications = [];
 
-<label for="lowerPriceRange">Выберите нижнюю границу стоимости: </label>
-<input type="range" id="lowerPriceRange" min="0" max="1000" step="1" value="0">
-<span id="lowerPriceValue">0</span>
+        function showNotification(options) {
+            var notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = options.content;
 
-<label for="upperPriceRange">Выберите верхнюю границу стоимости: </label>
-<input type="range" id="upperPriceRange" min="0" max="1000" step="1" value="1000">
-<span id="upperPriceValue">1000</span>
+            document.body.appendChild(notification);
+            notifications.push(notification);
 
-<button onclick="filterItemsByPrice()">Фильтр по стоимости</button>
+            // Располагаем уведомление
+            arrangeNotifications();
 
-<script>
-    function cartItemCreate(maxItemQuantity, minPrice, maxPrice) {
-        const itemsArray=[]; 
-        for (let i = 0; i<Math.floor(Math.random()*100); i++) {
-            let str = "";
-            for (let j=0; j<Math.floor(Math.random()*10); j++) {
-                str+=String.fromCharCode(Math.floor(Math.random()*82+40));
+            // Показываем уведомление
+            notification.style.display = 'block';
+
+            // Автоматически исчезаем через 1,5 секунды
+            setTimeout(function () {
+                notification.style.display = 'none';
+                document.body.removeChild(notification);
+                notifications.splice(notifications.indexOf(notification), 1);
+                arrangeNotifications();
+            }, 1500);
+        }
+
+        function arrangeNotifications() {
+            var offset = 10;
+            for (var i = 0; i < notifications.length; i++) {
+                var notification = notifications[i];
+                notification.style.top = offset + 'px';
+                offset += notification.offsetHeight + 10; // учитываем высоту уведомления и отступ
             }
-            const item = {
-                name:str,
-                price: Math.floor(Math.random()*(maxPrice-minPrice+1))+minPrice,
-                quantity: Math.floor(Math.random()*maxItemQuantity)+1
+        }
+
+        function addNotification() {
+            var notificationOptions = {
+                content: 'Новое уведомление!'
             };
-            itemsArray.push(item);
+            showNotification(notificationOptions);
         }
-        return itemsArray;
-    }
-    // Исходный массив с товарами и их стоимостью
-    let cartItems = cartItemCreate(10, 34, 100);
-    
-
-    // Функция для изменения случайного элемента в массиве
-    function changeItem() {
-        if (cartItems.length > 0) {
-            const randomIndex = Math.floor(Math.random() * cartItems.length);
-            cartItems[randomIndex].name = 'Новый товар';
-            console.log('Товар изменен:', cartItems);
-            updateTotal();
-        } else {
-            console.log('Корзина пуста');
-        }
-    }
-
-    // Функция для очистки корзины
-    function clearCart() {
-        cartItems = [];
-        console.log('Корзина очищена:', cartItems);
-        updateTotal();
-    }
-
-    // Функция для вывода содержимого корзины (для демонстрации)
-    function showCart() {
-        console.log('Содержимое корзины:', cartItems);
-    }
-
-    // Функция для увеличения количества товара
-    function increaseQuantity() {
-        if (cartItems.length > 0) {
-            const randomIndex = Math.floor(Math.random() * cartItems.length);
-            cartItems[randomIndex].quantity++;
-            console.log('Количество товара увеличено:', cartItems);
-            updateTotal();
-        } else {
-            console.log('Корзина пуста');
-        }
-    }
-
-    // Функция для обновления итоговой стоимости товаров
-    function updateTotal() {
-        let total = 0;
-        for (const item of cartItems) {
-            total += item.price * item.quantity;
-        }
-        console.log('Итоговая стоимость товаров:', total);
-    }
-
-    // Функция для фильтрации массива по стоимости
-    function filterItemsByPrice() {
-        const lowerPriceRange = document.getElementById('lowerPriceRange').value;
-        const upperPriceRange = document.getElementById('upperPriceRange').value;
-
-        const filteredArray = cartItems.filter(item => item.price >= lowerPriceRange && item.price <= upperPriceRange);
-        console.log(`Отфильтрованный массив (элементы со стоимостью от ${lowerPriceRange} до ${upperPriceRange}):`, filteredArray);
-    }
-
-    // Обновление значения на нижнем ползунке
-    document.getElementById('lowerPriceRange').addEventListener('input', function () {
-        document.getElementById('lowerPriceValue').textContent = this.value;
-    });
-
-    // Обновление значения на верхнем ползунке
-    document.getElementById('upperPriceRange').addEventListener('input', function () {
-        document.getElementById('upperPriceValue').textContent = this.value;
-    });
-</script>
-
+    </script>
 </body>
 </html>

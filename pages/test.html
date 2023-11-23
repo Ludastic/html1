@@ -6,39 +6,41 @@
     <title>Document</title>
     <link rel="icon" type="img/png" href="../images/videokamera.ico">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
-    <script src="../scripts/carousel.js" defer></script>
+    <!-- <script src="../scripts/carousel.js" defer></script> -->
     <script src="../scripts/pop_up_menu.js" defer></script>
+    <script src="../scripts/slider.js" defer></script>
+    <script src="../scripts/article-switcher.js" defer></script>
 </head>
-<body style="margin: 0px;">
-    <header style="display: flex;  justify-content: center; background-color:rgb(247, 240, 228);">
+<body style="margin: 0px; background-color: rgb(224,248,177);">
+    <header style="background-color:rgb(31, 30, 26);">
+      <div style="display: flex;">
         <img style="align-items: center; display: flex;" src="../images/videokamera.png" width="100px"
             height="100px">
         <h1 style="text-align: center;  margin-top: 30px;">
             Мир кино
         </h1>
+      </div>
+      <div style="display: flex; flex-direction: row; justify-self: end; margin-right: 100px;">
         <input id="menu-toggle" type="checkbox">
         <label for="menu-toggle">
-            <img src="../images/menu_button.png">
+            <img src="../images/icons8-hamburger-menu-512.png">
         </label>
             <nav class="burger-menu-container">
                 <ul style="display: flex; font-family: KPACUBO3; margin-right: 20px;" class="burger-menu">
-                    <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 10px;"><a href="../pages/horrors.html">Хорроры</a></li>
+                    <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 20px;"><a href="../pages/horrors.html">Хорроры</a></li>
                     <li style="font-family: KPACUBO3;margin-left: 10px; margin-bottom: 5px;"><a href="../pages/comedy.html">Комедии</a></li>
                     <li style="font-family: KPACUBO3;margin-left: 5px; margin-right: 10px;"><a href="../pages/adventures.html">Приключения</a></li>
                 </ul>
             </nav>
+      </div>
     </header>
     <button id="notification-button">Уведомления</button>
         <div id="notification-popup" class="hidden">
-            <div id="notification-list">
-                <div class="notification">
-                    <h3>Заголовок уведомления</h3>
-                    <p>Описание уведомления</p>
-                </div>
+            <div id="notification-list" style="max-height: 30vh; overflow-y: scroll;">
             </div>
             <div id="no-notifications" class="hidden">В настоящий момент уведомлений нет</div>
         </div>
-  
+        <p style="padding-left: calc( (100vw - 872px) / 2 ); margin-bottom: 3vh; font-size: 22px; color: rgb(108,33,28)">Скоро в кино</p>
         <main class="container">
             <section class="scrolling-carousel">
               <div class="card" style="background-image: url('https://asiasociety.org/sites/default/files/styles/1200w/public/2019-10/Parasite.jpg')">
@@ -105,15 +107,101 @@
                   </div>
                 </div>
               </div>
+              <div class="card" style="background-image: url('https://unbelievable-facts.com/wp-content/uploads/2017/11/Kung-Fu-Hustle-Facts.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Kung Fu Hustle (2004)</h3>
+                    <p class="card-description">An aspiring gangster pretends to be part of a notorious gang and tries to terrorise a neighbourhood. However, unknown to him, three martial arts experts live there and are ready to take him down.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="background-image: url('https://unbelievable-facts.com/wp-content/uploads/2017/11/Kung-Fu-Hustle-Facts.jpg')">
+                <div class="card-details">
+                  <div class="card-header">
+                    <h3 class="card-title">Kung Fu Hustle (2004)</h3>
+                    <p class="card-description">An aspiring gangster pretends to be part of a notorious gang and tries to terrorise a neighbourhood. However, unknown to him, three martial arts experts live there and are ready to take him down.</p>
+                  </div>
+                  <div class="card-call-to-action">
+                    <button class="btn primary">Watch</button>
+                    <button class="btn">Save</button>
+                  </div>
+                </div>
+              </div>
             </section>
+            <div class="scrolling-carousel-controls">
+              <button class="left">🢀</button>
+              <button class="right">🢂</button>
+            </div>  
           </main>
-
+          
+          <div class="article">
+            <div class="article-col">
+              <a class="header-articles" id="popular">Популярное</a>
+              <div class="article-col" id="populars">
+                <div class="popular-header">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1520341/093745372bd2a84607c0608aaba1b957/200x120" style="aspect-ratio: auto 120/200;">
+                  <a style="font-style: bold;">1. 100 великих фильмов XXI века: места 25–1</a>
+                </div>
+                <a>2. 100 великих фильмов XXI века: полный список</a>
+                <a>3. Финал «Локи» — это удача? Рассказываем про второй сезон сериала и объясняем его концовку</a>
+                <a>4. Пол Томас Андерсон: почему это американский режиссер №1. Объясняет Станислав Зельвенский</a>
+                <a>5. 100 великих фильмов XXI века: места 75–51 </a>
+              </div>
+            </div>
+            <div class="article-col ">
+              <a class="header-articles" id="today-head">Главное сегодня</a>
+              <div id="headliners">
+                <div class="today-headliner">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1348084/76c1d425e7dd30071dba7226418afad7/460x270">
+                  <a>Что смотреть дома: новая «Корона», «Скотт Пилигрим жмет на газ», итальянцы отбираются на Евро-2024 </a>
+                </div>
+                <div class="today-headliner">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1348084/c21007f9b1166a053c3550386dfd4bf8/280x164">
+                  <a>«„Монарх“: Наследие монстров». Сериал-скрепа монстр-вселенной  </a>
+                </div>
+                <div class="today-headliner">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1669849/c4d1ff810093cfad6ef9bd3aec3ddeff/280x164">
+                  <a>Отцы самых страшных бомб: кто есть кто в «Оппенгеймере»</a>
+                </div>
+                <div class="today-headliner">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1520341/0d6ae95b5ff41b1568da25be50e6a14f/280x164">
+                  <a>«Голодные игры: Баллада о змеях и певчих птицах» — лучшая часть гладиаторской франшизы. Вот почему </a>
+                </div>
+                <div class="today-headliner">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1348084/c93f9b7c36cae3d860ef916814bae289/280x164">
+                  <a>«Я знаю, что значит быть гонщиком»: фрагмент автобиографии Энцо Феррари </a>
+                </div>
+              </div>
+            </div>
+            <div class="article-col" id="vids">
+              <a class="header-articles new-videos" id="head-vids">Новые видео</a>
+              <div id="videos">
+                <div class="new-vid">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1520341/aabf667aa8a78fbd486453a45b12cde4/200x120">
+                  <a>Как «Ван-Пис» исследует сложные темы и почему адаптация от Netflix получилась не хуже аниме</a>
+                </div>
+                <div class="new-vid">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1669849/1fc85bf58a83126c243ba551a60b05bd/200x120">
+                  <a>Самые честные зрители «Кибердеревни» отвечают на вопросы</a>
+                </div>
+                <div class="new-vid">
+                  <img src="https://avatars.mds.yandex.net/get-kinopoisk-post-thumb/1101343/80964a276ae61fa9353cde82688c0383/200x120">
+                  <a>Что такое игры-сервисы и за что их любят и ненавидят</a>
+                </div>
+              </div>
+            </div>
+          </div>
     
-    <footer style="background-color: rgb(53, 67, 41);">
+    <footer style="background-color: rgb(53, 67, 41); margin-top: 1px;">
         <div class="container-footer">
             <div class="subcontainer-footer">
                 <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur corporis fugiat assumenda exercitationem dolores rem deserunt!</p>
+                <p>Курсовая работа по дисциплине "разработка клиентских частей интернет ресурсов". Тема - клиентская часть интернет ресурса «Мир кино»</p>
+                <p>Титлянов Андрей Константинович ИКБО-20-22</p>
                 <div style="margin-bottom: 10px; margin-top: 0px;" width="30%">
                     <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
                         <li>

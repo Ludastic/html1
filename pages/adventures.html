@@ -4,50 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../styles/adventures.css">
+    <link rel = "stylesheet" href="../styles/style.css">
+    <link rel = "stylesheet" href="../styles/style1.css">
+    <script src="../scripts/froggo.js" defer></script>
 </head>
-<body >
-    <div class="container">
-        <div class="header">
-            <a href="../pages/test.html">на главную</a>
+<body>
+    <header style="background-color:rgb(31, 30, 26);">
+        <div style="display: flex;">
+          <img style="align-items: center; display: flex;" src="../images/videokamera.png" width="100px"
+              height="100px">
+          <h1 style="text-align: center;  margin-top: 30px;">
+              Мир кино
+          </h1>
         </div>
-        <div class="sidebar">sidebar</div>
-        <div class="nav">navigation</div>
-        <div class="main">
-            <div class="gallery">
-                <div class="card1">
-                    <img src="../images/posters/adventure-img/king-kong.webp">
-                    <p>KING-KONG</p>
-                </div>
-                <div class="card2">
-                    <img src="../images/posters/adventure-img/indiana.jpg">
-                    <p>INDIANA JONES</p>
-                </div>
-                <div class="card3">
-                    <img src="../images/posters/adventure-img/intersllar.png">
-                    <p>INTERSTELLAR</p>
-                </div>
-                <div class="card4">
-                    <img src="../images/posters/adventure-img/mad_max.jpg">
-                    <p>MAD MAX</p>
-                </div>
-                <div class="card5">
-                    <img src="../images/posters/adventure-img/park.png">
-                    <p>JURASSIC PARK</p>
-                </div>
-                <div class="card6">
-                    <img src="../images/posters/adventure-img/life-of-pi.png">
-                    <p>LIFE OF PI</p>
-                </div>
-                <div class="card7">
-                    <img src="../images/posters/adventure-img/Back.png">
-                    <p>BACK TO THE FUTURE</p>
+        <div style="display: flex; flex-direction: row; justify-self: end; margin-right: 100px;">
+          <input id="menu-toggle" type="checkbox">
+          <label for="menu-toggle">
+              <img src="../images/icons8-hamburger-menu-512.png">
+          </label>
+              <nav class="burger-menu-container">
+                  <ul style="display: flex; font-family: KPACUBO3; margin-right: 20px;" class="burger-menu">
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 20px;"><a href="../pages/horrors.html">Хорроры</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-bottom: 5px;"><a href="../pages/comedy.html">Комедии</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 5px; margin-right: 10px;"><a href="../pages/adventures.html">Приключения</a></li>
+                  </ul>
+              </nav>
+        </div>
+      </header>
+      <main>
+        <div class="comedy-block">
+            <h1 style="font-size: 45px; margin-left: 5vw">Хорроры</h1>
+            <div class="comedy-description">
+                <img src="https://n1s1.hsmedia.ru/3f/0e/53/3f0e5339c2a7e8081b81dc14221a0d86/1200x1200_0xac120003_14704769821656423244.png" style="aspect-ratio: 3/4; max-height: 50vh; margin-left: 3vw; margin-right: 3vw;">
+                <div class="comedy-text-description">
+                    <p class="simple-text">Приключе́нческий фильм (также Авантюрный фильм) — остросюжетный вид игрового фильма, соответствующий приключенческому роману в литературе. Жанр близок боевику, но, в отличие от последнего, в приключенческих фильмах акцент смещён с грубого насилия на смекалку персонажей, умение перехитрить, обмануть злодея.</p>
+                    <div class="scrolling-carousel">
+                        <div class="photo-gal" style="background-image: url(https://gizmodo.com.au/wp-content/uploads/2020/06/18/c9kufw9y5yxvob0lfmvf.jpg?quality=75);"></div>
+                        <div class="photo-gal" style="background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/03/King-Kong-Lives.jpg);"></div>
+                        <div class="photo-gal" style="background-image: url(https://spaces.filmstories.co.uk/uploads/2022/08/the-man-who-would-be-king-6.jpg);"></div>
+                    </div>
+                    <p class="simple-text" style="align-self: center;">Моменты из классических фильмов приключений</p>
                 </div>
             </div>
         </div>
-        <div class="ads">ads</div>
-        <div class="footer">footer</div>
-    </div>
-    </div>
+        <div class="comedy-block" style="align-items: center;">
+            <h1 style="font-size: 45px; margin-left: 5vw">Различные подборки от нашего сайта</h1>
+            <div class="comedy-text-description">
+                <h2 style="font-size: 35px; margin-left: 5vw;">Классика кино приключений</h2>
+                <div class="scrolling-carousel">
+                    <div class="card" style="background-image: url(https://i.ebayimg.com/images/g/OvEAAOSwtFpj~8iH/s-l1600.jpg);">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3 class="card-title">Indiana Jones: Raiders of the Lost Ark (1981)</h3>
+                            <p class="card-description">Famous archaeologist and specialist in occult sciences, Dr. Jones, receives a dangerous assignment from the US government. He must go in search of a unique relic - the sacred Ark. But Indiana does not even suspect that Adolf Hitler’s secret agents have already received a similar order...</p>
+                        </div>
+                        <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="background-image: url('data:image/jpeg;base64,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')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Jurassic Park (1993) </h3>
+                            <p class="card-description">An expansive rich man and professor persuades a couple of paleontologists to come to an island off the coast of Costa Rica, where he has established a relict park...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYjZjOTU3MTMtYTM5YS00YjZmLThmNmMtODcwOTM1NmRiMWM2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">The Adventures of Robin Hood (1938)</h3>
+                            <p class="card-description">As is known from legends, the good King of England, Richard, went on the Crusade and was captured there. Prince John seized the throne and, driven by a thirst for profit, began to rob the people...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="font-size: 35px; margin-left: 5vw;">Фантастические приключения</h2>
+                <div class="scrolling-carousel">
+                    <div class="card" style="background-image: url('https://www.soundspheremag.com/wp-content/migration/images/stories/anewhopeposter.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Star Wars: Episode IV - A New Hope (1977) </h3>
+                            <p class="card-description">Tatooine. Desert planet. The now aged Jedi Knight Obi Wan Kenobi saves the young Luke Skywalker as he tries to find the missing droid...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://kinorotterdam.nl/content/uploads/2023/09/The-Matrix-poster.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">The Matrix (1999) </h3>
+                            <p class="card-description">The world of the Matrix is an illusion that exists only in the endless sleep of doomed humanity. A cold future world where people are just batteries in computer systems...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Interstellar (2014) </h3>
+                            <p class="card-description">As our time on Earth comes to an end, a team of explorers takes on the most important mission in human history; traveling beyond our galaxy to find out if humanity has a future among the stars...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer style="background-color: rgb(53, 67, 41); margin-top: 1px;">
+        <div class="container-footer">
+            <div class="subcontainer-footer">
+                <h2>About us</h2>
+                <p>Курсовая работа по дисциплине "разработка клиентских частей интернет ресурсов". Тема - клиентская часть интернет ресурса «Мир кино»</p>
+                <p>Титлянов Андрей Константинович ИКБО-20-22</p>
+                <div style="margin-bottom: 10px; margin-top: 0px;" width="30%">
+                    <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Quick links</h2>
+                <a href="../pages/comedy.html">Comedies</a>
+                <a href="../pages/adventures.html">Adventures</a>
+                <a href="../pages/horrors.html">Horrors</a>
+                <a href="../pages/Reg1.html">Registration1</a>
+                <a href="../pages/Reg2.html">Registration2</a>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Contact us</h2>
+                <a href="../pages/form.html">Comment</a>
+                
+            </div> 
+        </div>
+    </footer>
 </body>
 </html>

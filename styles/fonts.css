@@ -1,3 +1,4 @@
+@import url(../styles/fonts.css);
 @font-face {
     font-family: KPACUBO;
     src: url(../styles/fonts/bauhaus.otf);
@@ -18,3 +19,13 @@
     font-family: Kinopoisk-thin;
     src: url(../styles/fonts/PTSans-Regular.ttf);
 }
+@font-face {
+    font-family: Kinopoisk-thicker;
+    src: url(../styles/fonts/PTSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }

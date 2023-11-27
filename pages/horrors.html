@@ -4,58 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../styles/horror_style.css">
-    <script src="../scripts/trunc.js" defer></script>
+    <link rel = "stylesheet" href="../styles/style.css">
+    <link rel = "stylesheet" href="../styles/style1.css">
+    <script src="../scripts/froggo.js" defer></script>
 </head>
 <body>
-    <header style="display: flex; justify-content: center;">
-        <h1>
-            Хорроры
-        </h1>
-    </header>
-    <main style="display: flex; flex-wrap: wrap; justify-content: space-around; ">
-        <div style="display: flex; flex-direction: column;">
-            <div class="gallery a">
-                <h3>Кошмар на улице Вязов</h3>
-                <p class="truncateable">Четырём подросткам Спрингвуда снится один и тот же кошмарный сон, в котором за ними гонится и пытается убить человек с обожжённым лицом в шляпе и с ножами на руке...</p>
-                <a href="https://www.kinopoisk.ru/film/5198/">Подробнее</a>
-            </div>
-            <button class="Aa" onclick="window.location.href='https://www.kinopoisk.ru/film/5198/'">Кошмар на улице Вязов</button>
+    <header style="background-color:rgb(31, 30, 26);">
+        <div style="display: flex;">
+          <img style="align-items: center; display: flex;" src="../images/videokamera.png" width="100px"
+              height="100px">
+          <h1 style="text-align: center;  margin-top: 30px;">
+              Мир кино
+          </h1>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <div class="gallery b">
-                <h3>Челюсти</h3>
-                <p class="truncateable">Действие картины протекает в течение пяти дней — на острове Э́мити, где расположен небольшой курортный городок...</p>
-                <a href="https://www.kinopoisk.ru/film/396/">Подробнее</a>
-            </div>
-            <div class="Bb">
-                <a href="https://www.kinopoisk.ru/film/396/"><span>Челюсти</span></a>
-            </div>
-        </div >
-        <div style="display: flex; flex-direction: column;">
-            <div class="gallery c">
-                <h3>Психо</h3>
-                <p class="truncateable">Мэрион Крэйн недовольна романом с разведенным мужчиной, который уделяет ей внимание только наездами...</p>
-                <a href="https://www.kinopoisk.ru/film/344/">Подробнее</a>
-            </div>
-                <button class="Cc" onclick="window.location.href='https://www.kinopoisk.ru/film/344/'">Психо</button>
+        <div style="display: flex; flex-direction: row; justify-self: end; margin-right: 100px;">
+          <input id="menu-toggle" type="checkbox">
+          <label for="menu-toggle">
+              <img src="../images/icons8-hamburger-menu-512.png">
+          </label>
+              <nav class="burger-menu-container">
+                  <ul style="display: flex; font-family: KPACUBO3; margin-right: 20px;" class="burger-menu">
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 20px;"><a href="../pages/horrors.html">Хорроры</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-bottom: 5px;"><a href="../pages/comedy.html">Комедии</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 5px; margin-right: 10px;"><a href="../pages/adventures.html">Приключения</a></li>
+                  </ul>
+              </nav>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <div class="gallery d">
-                <h3>Сияние</h3>
-                <p class="truncateable">Джек Торренс с женой и сыном приезжает в элегантный отдалённый отель, чтобы работать смотрителем во время мертвого сезона...</p>
-                <a href="https://www.kinopoisk.ru/film/409/">Подробнее</a>
+      </header>
+      <main>
+        <div class="comedy-block">
+            <h1 style="font-size: 45px; margin-left: 5vw">Хорроры</h1>
+            <div class="comedy-description">
+                <img src="https://www.usatoday.com/gcdn/-mm-/6be45a9c4066fa9e9596b5b3fd70e7d25bc32546/c=60-0-1860-2400/local/-/media/USATODAY/GenericImages/2014/01/22//1390446683000-KARLOFF-FRANKENSTEIN-TIGHT-2851305.JPG" style="aspect-ratio: 3/4; max-height: 50vh; margin-left: 3vw; margin-right: 3vw;">
+                <div class="comedy-text-description">
+                    <p class="simple-text">Ужасы или хоррор (англ. horror) — жанр фантастики, который предназначен устрашить, напугать, шокировать или вызвать отвращение у своих читателей или зрителей, вызвав у них чувства ужаса и шока.</p>
+                    <div class="scrolling-carousel">
+                        <div class="photo-gal" style="background-image: url(https://hips.hearstapps.com/hmg-prod/images/hbz-classic-horror-movies-the-shining-gettyimages-162734047-1570655785.jpg);"></div>
+                        <div class="photo-gal" style="background-image: url(https://static01.nyt.com/images/2023/10/19/multimedia/horror-classics-list-01-zbmk/horror-classics-list-01-zbmk-articleLarge.jpg?quality=75&auto=webp&disable=upscale);"></div>
+                        <div class="photo-gal" style="background-image: url(https://orion-uploads.openroadmedia.com/xl_acb656-classichorrormovies_Lugosi-Dracula.jpg);"></div>
+                    </div>
+                    <p class="simple-text" style="align-self: center;">Моменты из классических хоррор фильмов</p>
+                </div>
             </div>
-            <button class="Dd" onclick="window.location.href = 'https://www.kinopoisk.ru/film/409/'">Сияние</button>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <div class="gallery e">
-                <h3>Молчание ягнят</h3>
-                <p class="truncateable">Психопат похищает и убивает молодых женщин по всему Среднему Западу...</p>
-                <a href="https://www.kinopoisk.ru/film/409/">Подробнее</a>
+        <div class="comedy-block" style="align-items: center;">
+            <h1 style="font-size: 45px; margin-left: 5vw">Различные подборки от нашего сайта</h1>
+            <div class="comedy-text-description">
+                <h2 style="font-size: 35px; margin-left: 5vw;">Классика хоррор кино</h2>
+                <div class="scrolling-carousel">
+                    <div class="card" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/1200px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg);">
+                    <div class="card-details">
+                        <div class="card-header">
+                            <h3 class="card-title">Psycho (1960)</h3>
+                            <p class="card-description">A girl, dissatisfied with an affair with a divorced man who pays attention to her only on visits, steals a large sum of money at work and flees the city in a hurry...</p>
+                        </div>
+                        <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/I/81f0R7uwewL._AC_UF1000,1000_QL80_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">The Shining (1980) </h3>
+                            <p class="card-description">The main character, Jack Torrance, arrived at an elegant secluded hotel to work as a caretaker during the low season with his wife and son...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://s3.amazonaws.com/criterion-production/films/5d825de608ea6993b42be3c972bab02f/O4mn7lXmAaCzdLtUmSqBHAKHJBQW3P_large.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Night of the Living Dead (1968)  </h3>
+                            <p class="card-description">Barbara and her brother Johnny arrive at a cemetery located in a secluded countryside location. Suddenly they are attacked by creatures that resemble the dead who have risen from their graves...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="font-size: 35px; margin-left: 5vw;">Психологические ужасы</h2>
+                <div class="scrolling-carousel">
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjMwODQ3NzUwOF5BMl5BanBnXkFtZTgwNjAyNjUwMTE@._V1_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">The Babadook (2014) </h3>
+                            <p class="card-description">Six years ago, Amelia lost her husband and gave birth to a son on the same day. Samuel is already in his seventh year, but he sees monsters everywhere...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Shutter Island (2010) </h3>
+                            <p class="card-description">Two American bailiffs are sent to an island in Massachusetts to investigate the disappearance of a patient in a hospital for the criminally insane...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg')">
+                        <div class="card-details">
+                          <div class="card-header">
+                            <h3 class="card-title">Memento (2000) </h3>
+                            <p class="card-description">Leonard Shelby is elegantly and expensively dressed, drives a brand new Jaguar, but stays in cheap motels. He is trying with all his might to find his wife's killer. His problem is a rare form of amnesia, loss of short-term memory - although he remembers everything before the murder, he does not remember what happened 15 minutes ago...</p>
+                          </div>
+                          <div class="card-call-to-action">
+                            <button class="btn primary">Watch</button>
+                            <button class="btn">Save</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                <button id="" onclick="window.location.href = 'https://www.kinopoisk.ru/film/345/'">Молчание ягнят</button>
         </div>
-    </main>
+      </main>
+      <footer style="background-color: rgb(53, 67, 41); margin-top: 1px;">
+        <div class="container-footer">
+            <div class="subcontainer-footer">
+                <h2>About us</h2>
+                <p>Курсовая работа по дисциплине "разработка клиентских частей интернет ресурсов". Тема - клиентская часть интернет ресурса «Мир кино»</p>
+                <p>Титлянов Андрей Константинович ИКБО-20-22</p>
+                <div style="margin-bottom: 10px; margin-top: 0px;" width="30%">
+                    <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Quick links</h2>
+                <a href="../pages/comedy.html">Comedies</a>
+                <a href="../pages/adventures.html">Adventures</a>
+                <a href="../pages/horrors.html">Horrors</a>
+                <a href="../pages/Reg1.html">Registration1</a>
+                <a href="../pages/Reg2.html">Registration2</a>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Contact us</h2>
+                <a href="../pages/form.html">Comment</a>
+                
+            </div> 
+        </div>
+    </footer>
 </body>
 </html>

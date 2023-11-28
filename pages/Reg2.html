@@ -3,68 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уведомление</title>
-    <style>
-        .notification {
-            position: absolute;
-            margin-left: 80vw;
-            padding: 10px;
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: none;
-        }
-
-        button {
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/quotes.css">
+    <title>Обзоры</title>
 </head>
-<body>
-    <button onclick="addNotification()">Добавить уведомление</button>
-
-    <script>
-        var notifications = [];
-
-        function showNotification(options) {
-            var notification = document.createElement('div');
-            notification.className = 'notification';
-            notification.textContent = options.content;
-
-            document.body.appendChild(notification);
-            notifications.push(notification);
-
-            // Располагаем уведомление
-            arrangeNotifications();
-
-            // Показываем уведомление
-            notification.style.display = 'block';
-
-            // Автоматически исчезаем через 1,5 секунды
-            setTimeout(function () {
-                notification.style.display = 'none';
-                document.body.removeChild(notification);
-                notifications.splice(notifications.indexOf(notification), 1);
-                arrangeNotifications();
-            }, 1500);
-        }
-
-        function arrangeNotifications() {
-            var offset = 10;
-            for (var i = 0; i < notifications.length; i++) {
-                var notification = notifications[i];
-                notification.style.top = offset + 'px';
-                offset += notification.offsetHeight + 10; // учитываем высоту уведомления и отступ
-            }
-        }
-
-        function addNotification() {
-            var notificationOptions = {
-                content: 'Новое уведомление!'
-            };
-            showNotification(notificationOptions);
-        }
-    </script>
+<body style="margin: 0px">
+    <header style="background-color:rgb(31, 30, 26);">
+        <div style="display: flex;">
+          <img style="align-items: center; display: flex;" src="../images/videokamera.png" width="100px"
+              height="100px">
+          <h1 style="text-align: center;  margin-top: 30px;">
+              Мир кино
+          </h1>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-self: end; margin-right: 100px;">
+          <input id="menu-toggle" type="checkbox">
+          <label for="menu-toggle">
+              <img src="../images/icons8-hamburger-menu-512.png">
+          </label>
+              <nav class="burger-menu-container">
+                  <ul style="display: flex; font-family: KPACUBO3; margin-right: 20px;" class="burger-menu">
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-right: 20px;"><a href="../pages/horrors.html">Хорроры</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 10px; margin-bottom: 5px;"><a href="../pages/comedy.html">Комедии</a></li>
+                      <li style="font-family: KPACUBO3;margin-left: 5px; margin-right: 10px;"><a href="../pages/adventures.html">Приключения</a></li>
+                  </ul>
+              </nav>
+        </div>
+    </header>
+    <div style="width: 960px; margin: 0 auto; padding-top: 80px; padding-bottom: 80px;"> 
+        <div class="testimonial-quote group">
+            <img src="https://www.film.ru/sites/default/files/styles/thumb_260x260/public/avatars/4_0.jpg">
+            <div class="quote-container">
+                <blockquote>
+                    <p>«Скотт Пилигрим жмет на газ»<br>Критический взгляд на одного из ключевых поп-культурных героев.”</p>
+                </blockquote>  
+                <cite><span>Сергей Сергиенко</span><br>
+                    Пишет для нас<br>
+                    с 2022 г. 
+                </cite>
+            </div>
+        </div>    
+            
+        <hr style="margin: 60px auto; opacity: .5;">
+             
+        <div class="testimonial-quote group right-quote">
+            <img src="https://www.film.ru/sites/default/files/styles/epsa_260x260/public/avatars/authors/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2%20%D0%A8%D1%83%D1%80%D0%B0%D0%B2%D0%B8%D0%BD.jpeg">
+            <div class="quote-container">
+                <div>
+                    <blockquote>
+                        <p>«Наполеон»<br>Историческая драма от мастера жанра Ридли Скотта про войну, мир и непомерные амбиции.”</p>
+                    </blockquote>  
+                    <cite><span>Владислав Шуравин</span><br>
+                        Автор film.ru<br>
+                        с 2019 года.
+                    </cite>
+                </div>
+            </div>
+        </div>     
+        <hr style="margin: 60px auto; opacity: .5;">
+    </div>
+    <footer style="background-color: rgb(53, 67, 41); margin-top: 1px;">
+        <div class="container-footer">
+            <div class="subcontainer-footer">
+                <h2>About us</h2>
+                <p>Курсовая работа по дисциплине "разработка клиентских частей интернет ресурсов". Тема - клиентская часть интернет ресурса «Мир кино»</p>
+                <p>Титлянов Андрей Константинович ИКБО-20-22</p>
+                <div style="margin-bottom: 10px; margin-top: 0px;" width="30%">
+                    <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Quick links</h2>
+                <a href="../pages/comedy.html">Comedies</a>
+                <a href="../pages/adventures.html">Adventures</a>
+                <a href="../pages/horrors.html">Horrors</a>
+                <a href="../pages/Reg1.html">Registration1</a>
+                <a href="../pages/Reg2.html">Registration2</a>
+            </div>
+            <div class="subcontainer-footer">
+                <h2>Contact us</h2>
+                <a href="../pages/form.html">Comment</a>
+                
+            </div> 
+        </div>
+    </footer>
 </body>
 </html>

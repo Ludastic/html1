@@ -16,6 +16,7 @@
 }
 .py-60 {
     padding: 60px 0;
+    background-color: rgb(108,33,28);
   }
   @media only screen and (max-width: 768px) {
     .py-60 {
@@ -26,9 +27,9 @@
     background: #f3f3f3;
   }
   h2 {
-    font-family: Roboto-Light;
+    font-family: Kinopoisk;
     font-size: 32px;
-    color: #000;
+    color: rgb(224,248,177);
     line-height: 1.25;
     text-transform: uppercase;
   }
@@ -51,9 +52,9 @@
     padding: 18px 0 18px 18px;
   }
   .question {
-    font-family: Roboto;
+    font-family: Kinopoisk-thicker;
     font-size: 20px;
-    color: #5c5c5c;
+    color: rgb(108,33,28);
     line-height: 1.5;
     padding: 20px;
     margin-bottom: 0;
@@ -65,16 +66,17 @@
     transition: transform 0.5s ease-in-out;
   }
   .answer {
-    font-size: 16px;
-    color: #5c5c5c;
+    font-family: Kinopoisk-thin;
+    font-size: 20px;
+    color: rgb(108,33,28);
     padding: 16px;
     padding-left: 52px;
     padding-bottom: 32px;
-    background-color: #fff;
+    background-color: rgb(224,248,177);
     overflow: hidden;
   }
   .accordion {
-    background-color: #fff;
+    background-color: rgb(224,248,177);
     color: #444;
     cursor: pointer;
     width: 100%;

@@ -56,8 +56,8 @@ html {
       border: 3px solid rgb(224,248,177);
       border-radius: 50%;
       display: block;
-      width: 120px;
-      height: 120px;
+      width: min(120px, 20vw);
+      height: min(120px, 20vw);
       position: absolute;
       top: -.2em; 
       left: 0;    
@@ -84,12 +84,12 @@ html {
   }
   
   .testimonial-quote .quote-container {
-      padding-left: 160px; 
+      padding-left: min(160px, 20vw); 
   }
     
   .testimonial-quote.right-quote .quote-container {
       padding-left: 0;
-      padding-right: 160px; 
+      padding-right: min(160px, 20vw); 
   }
   
   .testimonial-quote.right-quote img {

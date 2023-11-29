@@ -243,6 +243,7 @@ label img {
     border-bottom: 1px solid #ccc; /* Разделяющая линия между уведомлениями */
     margin-bottom: 10px;
     padding-bottom: 10px;
+    /* display: ; */
 }
 #no-notifications {
     display: none;
@@ -418,7 +419,7 @@ footer a {
     /* height: 40vh; */
     /* height: 80%; */
     display: flex;
-    width: 54.5rem;
+    width: 80vw;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
@@ -426,7 +427,6 @@ footer a {
     min-height: 375px;
     margin-bottom: 10px;
     scroll-behavior: smooth;
-
   
   .card {
     border-radius: 0.5em;

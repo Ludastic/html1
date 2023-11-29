@@ -40,7 +40,7 @@ function addNotifaction() {
         notifications.push(notification);
     }
 };
-let timerId = setInterval(redraw, 3000);
+let timerId = setInterval(redraw, 30000);
 function pauseDecorator(timerId) {
     clearInterval(timerId);
     setTimeout(function() {

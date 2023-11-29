@@ -58,3 +58,17 @@ h2 {
 .photo-gal:hover {
     transform: scale(1.05);
 }
+.main-img {
+    aspect-ratio: 3/4; 
+    max-height: 50vh; 
+    margin-left: 3vw; 
+    margin-right: 3vw;
+}
+@media (max-width: 1280px) {
+    .comedy-description {
+        flex-direction: column;
+    }
+    .main-img {
+        max-height:fit-content;
+    }
+}

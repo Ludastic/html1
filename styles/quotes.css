@@ -1,5 +1,5 @@
 html {
-    background: rgb(224,248,177);
+    background: rgb(108,33,28);
   }
   
   h1 {
@@ -19,14 +19,14 @@ html {
       padding: 0;
   
       background: none;
-      color: rgb(108,33,28);
+      color: rgb(224,248,177);
       font-family: Georgia, serif;
       font-size: 1.5em;
       font-style: italic;
       line-height: 1.4 !important;
       margin: 0;
       position: relative;
-      text-shadow: 0 1px rgb(108,33,28);
+      text-shadow: 0 1px rgb(224,248,177);
       z-index: 600;
   }
   
@@ -35,13 +35,13 @@ html {
   }
   
   .testimonial-quote blockquote p {
-      color: rgb(108,33,28); 
+      color: rgb(224,248,177); 
       line-height: 1.4 !important;
   }
   
   .testimonial-quote blockquote p:first-child:before {
       content: '\201C';
-      color: rgb(108,33,28);
+      color: rgb(224,248,177);
       font-size: 7.5em;
       font-weight: 700;
       opacity: .3;
@@ -53,7 +53,7 @@ html {
   }
   
   .testimonial-quote img {
-      border: 3px solid rgb(108,33,28);
+      border: 3px solid rgb(224,248,177);
       border-radius: 50%;
       display: block;
       width: 120px;
@@ -64,19 +64,19 @@ html {
   }
   
   .testimonial-quote cite {
-      color: rgb(108,33,28);
+      color: rgb(224,248,177);
       display: block;
       font-size: .8em; 
   }
     
   .testimonial-quote cite span {
-      color: rgb(108,33,28);
+      color: rgb(224,248,177);
       font-size: 1em;
       font-style: normal;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
-      text-shadow: 0 1px rgb(108,33,28); 
+      text-shadow: 0 1px rgb(224,248,177); 
   }
   
   .testimonial-quote {

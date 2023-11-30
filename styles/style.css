@@ -393,8 +393,8 @@ footer a {
   font-family: sans-serif;
   flex-direction: column;
   margin-bottom: 15px;
-  margin-left: calc( (100vw - 872px) / 2 - 2vw);
-  margin-right: calc( (100vw - 872px) / 2  - 4vw);
+  /* margin-left: calc( (100vw - 872px) / 2 - 2vw);
+  margin-right: calc( (100vw - 872px) / 2  - 4vw); */
 }
 
 .sidebar {

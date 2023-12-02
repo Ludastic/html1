@@ -9,7 +9,7 @@ FAQs.forEach(element => {
     var answerText = container.querySelector(".answer");
 
     if (answerText.hidden) {
-      answer.style.height = `${80}px`;
+      answer.style.height = `min-content`;
     } else {
       answer.style.height = `${0}px`;
     }

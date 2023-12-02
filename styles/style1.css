@@ -39,8 +39,10 @@ h2 {
     font-family: Kinopoisk-thicker;
     font-size: 18px;
     color:rgb(224,248,177);
+    width: 80%;
 }
 .comedy-text-description {
+    width: min-content;
     display: flex;
     flex-direction: column;
 }

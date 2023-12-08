@@ -16,3 +16,4 @@ buttonForVids.onclick = (ev) => {
     articleHeadliners.style.display = "none";
     articleVids.style.display = "block";
 }
+

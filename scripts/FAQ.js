@@ -30,3 +30,4 @@ FAQs.forEach(element => {
     }
   }
 });
+

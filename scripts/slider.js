@@ -12,3 +12,4 @@ right.onclick = () => {
     console.log(card.clientWidth)
     slider.scrollLeft += card.clientWidth + 16;
 }
+

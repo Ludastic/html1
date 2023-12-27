@@ -609,11 +609,10 @@ footer a {
     padding-left: calc(5vw);
     padding-right: calc(5vw);
     display: grid;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-flow: row;
+    grid-auto-flow: dense;
     gap: 10px;
-    grid-template-areas:
-    "popular headliners vids";
 }
 .article-col {
     display:flex;
@@ -631,7 +630,11 @@ footer a {
     
     cursor: pointer;
 }
-.article-col .header-articles {
+.header-articles {
+    font-style: none;
+    font-family: Kinopoisk-thin;
+    margin-bottom: 8px;
+    color: rgb(108,33,28);
     font-style: none;
     font-family: Kinopoisk;
     font-size: 1.5em;
@@ -685,6 +688,18 @@ footer a {
     }
 }
 @media (max-width: 767px) {
+    .article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-auto-flow: column;
+    }
+    #popular {
+        display: none;
+    }
+    #populars {
+        display: none;
+    }
     .scrolling-carousel {
         overflow-x: scroll;
     }
@@ -693,9 +708,6 @@ footer a {
     }
     .right {
         display: none;
-    }
-    .article {
-        grid-template-columns: 1fr;
     }
     #videos {
         display: none;
@@ -706,12 +718,8 @@ footer a {
     .header-articles {
         margin-bottom: 1em;
     }
-    #populars {
-        display: none;
-    }
-    #popular {
-        display: none;
-    }
+    
+    
     /* .header-articles {
         color: rgba(31,31,31,.4);
     } */
